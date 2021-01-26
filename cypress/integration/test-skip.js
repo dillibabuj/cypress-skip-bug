@@ -10,11 +10,11 @@ describe('test before block with skip on first test',()=>{
         console.log('Before Each Test')
     })
 
-    it('First Test',()=>{
+    it.skip('First Test',()=>{
         cy.log('In First Test')
         console.log('In First Test')
     })
-    it.skip('Second Test',()=>{
+    it('Second Test',()=>{
         cy.log('In Second Test')
         console.log('In Second Test')
     })
